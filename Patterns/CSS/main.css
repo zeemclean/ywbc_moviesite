@@ -1,0 +1,122 @@
+@import url(http://fonts.googleapis.com/css?family=Stint+Ultra+Condensed|Raleway:400,300,900,700);
+/* line 2, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_nav.scss */
+li {
+  float: left;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  list-style: none;
+  text-transform: uppercase;
+  padding: 10px;
+  letter-spacing: 2px;
+}
+
+/* line 12, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_nav.scss */
+nav {
+  margin: auto;
+}
+
+/* line 10, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_colours.scss */
+.colour_palette {
+  width: 80px;
+  height: 80px;
+  border: 5px solid #fff;
+  float: left;
+  margin-right: 6px;
+  box-shadow: 2px 2px 3px #888;
+  margin-top: 5px;
+}
+/* line 20, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_colours.scss */
+.colour_palette.colour_palette__sunshine {
+  background: #ffb34e;
+}
+/* line 23, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_colours.scss */
+.colour_palette.colour_palette__seastorm {
+  background: #805a6a;
+}
+/* line 26, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_colours.scss */
+.colour_palette.colour_palette__rust {
+  background: #ec4300;
+}
+/* line 29, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_colours.scss */
+.colour_palette.colour_palette__tugboat {
+  background: #a42812;
+}
+/* line 32, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_colours.scss */
+.colour_palette.colour_palette__pelican {
+  background: #4c0630;
+}
+
+/* line 5, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_headings.scss */
+h1 {
+  font-size: 3em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #805a6a;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 0px;
+}
+
+/* line 15, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_headings.scss */
+h2 {
+  font-size: 2.5em;
+  font-family: "Stint Ultra Condensed", cursive;
+  color: #ec4300;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 22, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_headings.scss */
+h3 {
+  font-size: 1.3em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #805a6a;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 30, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_headings.scss */
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 7, ../SCSS/main.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 11, ../SCSS/main.scss */
+body {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 16, ../SCSS/main.scss */
+.clearfix:after, article:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+  font-size: 0;
+}
+
+/* line 26, ../SCSS/main.scss */
+.clearfix, article {
+  display: inline-block;
+}
+
+/* line 32, ../SCSS/main.scss */
+* html .clearfix, * html article {
+  height: 1%;
+}
+
+/* line 36, ../SCSS/main.scss */
+.clearfix, article {
+  display: block;
+}
