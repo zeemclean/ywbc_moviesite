@@ -3,10 +3,10 @@ $stint : 'Stint Ultra Condensed', cursive;
 
 
 h1 {
-	font-size: 3em;
+	font-size: 3.5em;
 	font-family: $roboto;
-	font-weight: 900;
-	color: $seastorm;
+	font-weight: 300;
+	color: $jetty;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin-bottom: 0px;
@@ -16,27 +16,26 @@ h1 {
 h1.buttontext {
 	color: white;
 }
-.bigtype{
-	font-size: 3.5em;
-}
+
 
 h2 {
 	font-size: 2.5em;
-	font-family: $stint;
-	color: $rust;
+	font-family: $robocon;
+	color: $horizon;
 	margin-top: 0;
 	margin-bottom: 0;
+	font-weight: 700;
 }
 h3 {
 	font-size: 1.3em;
-	font-family: $raleway;
+	font-family: $roboto;
 	font-weight: 400;
-	color: $seastorm;
+	color: $swell;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 h4 {
-	font-family: $raleway;
+	font-family: $roboto;
 	font-weight: 700;
 	margin-top: 5px;
 	margin-bottom: 0;

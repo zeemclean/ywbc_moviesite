@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700|Roboto+Condensed:400italic,400,300,700);
 /* line 2, ../SCSS/_nav.scss */
 nav ul {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   list-style-type: none;
   text-transform: uppercase;
@@ -46,7 +46,7 @@ size
 }
 /* line 52, ../SCSS/_nav.scss */
 .headerNav li a:hover {
-  color: #805a6a;
+  color: #4d8c65;
   text-decoration: none;
 }
 /* line 57, ../SCSS/_nav.scss */
@@ -61,12 +61,12 @@ size
 /* line 42, ../SCSS/_nav.scss */
 .contentNav li {
   font-weight: 700;
-  border-color: #ec4300;
+  border-color: #4d3815;
   font-size: 16px;
 }
 /* line 48, ../SCSS/_nav.scss */
 .contentNav li a {
-  color: #ec4300;
+  color: #4d3815;
 }
 /* line 52, ../SCSS/_nav.scss */
 .contentNav li a:hover {
@@ -75,11 +75,11 @@ size
 }
 /* line 57, ../SCSS/_nav.scss */
 .contentNav li.inactive {
-  color: #ec4300;
+  color: #4d3815;
 }
 /* line 62, ../SCSS/_nav.scss */
 .contentNav li.active a {
-  color: #a42812;
+  color: #8c8457;
 }
 
 /* line 42, ../SCSS/_nav.scss */
@@ -94,7 +94,7 @@ size
 }
 /* line 52, ../SCSS/_nav.scss */
 .footerNav li a:hover {
-  color: #ec4300;
+  color: #3b6375;
   text-decoration: none;
 }
 /* line 57, ../SCSS/_nav.scss */
@@ -106,7 +106,7 @@ size
   color: #ffb34e;
 }
 
-/* line 11, ../SCSS/_colours.scss */
+/* line 17, ../SCSS/_colours.scss */
 .colour_palette {
   width: 80px;
   height: 80px;
@@ -116,33 +116,33 @@ size
   box-shadow: 2px 2px 3px #888;
   margin-top: 5px;
 }
-/* line 21, ../SCSS/_colours.scss */
+/* line 27, ../SCSS/_colours.scss */
 .colour_palette.colour_palette__sunshine {
   background: #ffb34e;
 }
-/* line 24, ../SCSS/_colours.scss */
+/* line 30, ../SCSS/_colours.scss */
 .colour_palette.colour_palette__seastorm {
   background: #805a6a;
 }
-/* line 27, ../SCSS/_colours.scss */
+/* line 33, ../SCSS/_colours.scss */
 .colour_palette.colour_palette__rust {
   background: #ec4300;
 }
-/* line 30, ../SCSS/_colours.scss */
+/* line 36, ../SCSS/_colours.scss */
 .colour_palette.colour_palette__tugboat {
   background: #a42812;
 }
-/* line 33, ../SCSS/_colours.scss */
+/* line 39, ../SCSS/_colours.scss */
 .colour_palette.colour_palette__pelican {
   background: #4c0630;
 }
 
 /* line 5, ../SCSS/_headings.scss */
 h1 {
-  font-size: 3em;
+  font-size: 3.5em;
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  color: #805a6a;
+  font-weight: 300;
+  color: #4d3815;
   text-transform: uppercase;
   letter-spacing: 5px;
   margin-bottom: 0px;
@@ -154,33 +154,29 @@ h1.buttontext {
   color: white;
 }
 
-/* line 19, ../SCSS/_headings.scss */
-.bigtype {
-  font-size: 3.5em;
-}
-
-/* line 23, ../SCSS/_headings.scss */
+/* line 21, ../SCSS/_headings.scss */
 h2 {
   font-size: 2.5em;
-  font-family: "Stint Ultra Condensed", cursive;
-  color: #ec4300;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #3b6375;
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: 700;
 }
 
-/* line 30, ../SCSS/_headings.scss */
+/* line 29, ../SCSS/_headings.scss */
 h3 {
   font-size: 1.3em;
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #805a6a;
+  color: #4d8c65;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* line 38, ../SCSS/_headings.scss */
+/* line 37, ../SCSS/_headings.scss */
 h4 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   margin-top: 5px;
   margin-bottom: 0;
@@ -188,7 +184,7 @@ h4 {
   color: #666;
 }
 
-/* line 49, ../SCSS/_headings.scss */
+/* line 48, ../SCSS/_headings.scss */
 h5 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -196,7 +192,7 @@ h5 {
   margin-top: 5px;
 }
 
-/* line 57, ../SCSS/_headings.scss */
+/* line 56, ../SCSS/_headings.scss */
 h6 {
   font-family: "Raleway", sans-serif;
   color: #666;

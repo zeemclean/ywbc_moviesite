@@ -19,7 +19,7 @@
 				</div>
 				<div class="row">
 					<div class="col-md-8">
-						<h1 class="bigtype">Double Barrel</h1>
+						<h1>Double Barrel</h1>
 					</div>	
 					<div class="col-md-4">
 						<h3 class="releasedate">Coming November, 2014.</h3>
