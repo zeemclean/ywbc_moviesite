@@ -1,0 +1,380 @@
+@import url(http://fonts.googleapis.com/css?family=Stint+Ultra+Condensed|Raleway:400,300,900,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700|Roboto+Condensed:400italic,400,300,700);
+/* line 2, ../SCSS/_nav.scss */
+nav ul {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  list-style-type: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+/* line 12, ../SCSS/_nav.scss */
+nav ul li {
+  float: left;
+  padding: 1px 10px 1px 10px;
+  border-right: 3px solid white;
+}
+/* line 18, ../SCSS/_nav.scss */
+nav ul li:last-of-type {
+  border: none;
+}
+
+/* pseudo code!
+
+I want to create three different nav styles. 
+Mixin
+three nav classes: headerNav, contentNav and footerNav.
+They share some attributes. 
+Things that change:
+color - border and text
+hover color
+active color
+weight
+size 
+
+
+*/
+/* line 42, ../SCSS/_nav.scss */
+.headerNav li {
+  font-weight: 900;
+  border-color: white;
+  font-size: 18px;
+}
+/* line 48, ../SCSS/_nav.scss */
+.headerNav li a {
+  color: white;
+}
+/* line 52, ../SCSS/_nav.scss */
+.headerNav li a:hover {
+  color: #805a6a;
+  text-decoration: none;
+}
+/* line 57, ../SCSS/_nav.scss */
+.headerNav li.inactive {
+  color: white;
+}
+/* line 62, ../SCSS/_nav.scss */
+.headerNav li.active a {
+  color: #ffb34e;
+}
+
+/* line 42, ../SCSS/_nav.scss */
+.contentNav li {
+  font-weight: 700;
+  border-color: #ec4300;
+  font-size: 16px;
+}
+/* line 48, ../SCSS/_nav.scss */
+.contentNav li a {
+  color: #ec4300;
+}
+/* line 52, ../SCSS/_nav.scss */
+.contentNav li a:hover {
+  color: #ffb34e;
+  text-decoration: none;
+}
+/* line 57, ../SCSS/_nav.scss */
+.contentNav li.inactive {
+  color: #ec4300;
+}
+/* line 62, ../SCSS/_nav.scss */
+.contentNav li.active a {
+  color: #a42812;
+}
+
+/* line 42, ../SCSS/_nav.scss */
+.footerNav li {
+  font-weight: normal;
+  border-color: white;
+  font-size: 16px;
+}
+/* line 48, ../SCSS/_nav.scss */
+.footerNav li a {
+  color: white;
+}
+/* line 52, ../SCSS/_nav.scss */
+.footerNav li a:hover {
+  color: #ec4300;
+  text-decoration: none;
+}
+/* line 57, ../SCSS/_nav.scss */
+.footerNav li.inactive {
+  color: white;
+}
+/* line 62, ../SCSS/_nav.scss */
+.footerNav li.active a {
+  color: #ffb34e;
+}
+
+/* line 11, ../SCSS/_colours.scss */
+.colour_palette {
+  width: 80px;
+  height: 80px;
+  border: 5px solid #fff;
+  float: left;
+  margin-right: 6px;
+  box-shadow: 2px 2px 3px #888;
+  margin-top: 5px;
+}
+/* line 21, ../SCSS/_colours.scss */
+.colour_palette.colour_palette__sunshine {
+  background: #ffb34e;
+}
+/* line 24, ../SCSS/_colours.scss */
+.colour_palette.colour_palette__seastorm {
+  background: #805a6a;
+}
+/* line 27, ../SCSS/_colours.scss */
+.colour_palette.colour_palette__rust {
+  background: #ec4300;
+}
+/* line 30, ../SCSS/_colours.scss */
+.colour_palette.colour_palette__tugboat {
+  background: #a42812;
+}
+/* line 33, ../SCSS/_colours.scss */
+.colour_palette.colour_palette__pelican {
+  background: #4c0630;
+}
+
+/* line 5, ../SCSS/_headings.scss */
+h1 {
+  font-size: 3em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: #805a6a;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+/* line 16, ../SCSS/_headings.scss */
+h1.buttontext {
+  color: white;
+}
+
+/* line 19, ../SCSS/_headings.scss */
+.bigtype {
+  font-size: 3.5em;
+}
+
+/* line 23, ../SCSS/_headings.scss */
+h2 {
+  font-size: 2.5em;
+  font-family: "Stint Ultra Condensed", cursive;
+  color: #ec4300;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 30, ../SCSS/_headings.scss */
+h3 {
+  font-size: 1.3em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #805a6a;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 38, ../SCSS/_headings.scss */
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-style: italic;
+  color: #666;
+}
+
+/* line 49, ../SCSS/_headings.scss */
+h5 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* line 57, ../SCSS/_headings.scss */
+h6 {
+  font-family: "Raleway", sans-serif;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* line 1, ../SCSS/_header.scss */
+header {
+  height: 300px;
+}
+
+/* line 5, ../SCSS/_header.scss */
+img.logo {
+  padding-left: 20px;
+  margin-top: 64px;
+  position: center;
+  margin-bottom: 32px;
+}
+
+/* line 13, ../SCSS/_header.scss */
+nav.headerNav {
+  margin-top: 48px;
+  position: relative;
+  left: 22.5%;
+}
+
+/* line 1, ../SCSS/_gallery.scss */
+.gallerybox {
+  height: 100px;
+  width: 1000px;
+  margin: 0px 0px 0px 64px;
+  overflow: hidden;
+}
+
+/* line 12, ../SCSS/_gallery.scss */
+.gallerycontainer {
+  width: 600px;
+  height: 100px;
+  background: -webkit-linear-gradient(left, white, white, white);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, white, white, white);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, white, white, white);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #ffffff, #ffffff, #ffffff);
+}
+
+/* line 22, ../SCSS/_gallery.scss */
+.gallerythumb {
+  margin-right: 5px;
+}
+
+/* line 26, ../SCSS/_gallery.scss */
+.right {
+  left: 77%;
+  top: 0;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), white);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(255, 255, 255, 0), white);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(255, 255, 255, 0), white);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+}
+
+/* line 35, ../SCSS/_gallery.scss */
+.left {
+  background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), white);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0), white);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), white);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff);
+}
+
+/* line 43, ../SCSS/_gallery.scss */
+.gallerycover {
+  z-index: 20;
+  position: absolute;
+  height: 105px;
+  width: 90px;
+}
+
+/* line 10, ../SCSS/main.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 14, ../SCSS/main.scss */
+body {
+  margin: 0 auto;
+  background: url("../assets/images/home_bg--short.jpg") no-repeat fixed;
+  background-position: center top;
+}
+
+/* line 24, ../SCSS/main.scss */
+.clearfix:after, article:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+  font-size: 0;
+}
+
+/* line 34, ../SCSS/main.scss */
+.clearfix, article {
+  display: inline-block;
+}
+
+/* line 40, ../SCSS/main.scss */
+* html .clearfix, * html article {
+  height: 1%;
+}
+
+/* line 44, ../SCSS/main.scss */
+.clearfix, article {
+  display: block;
+}
+
+/* line 53, ../SCSS/main.scss */
+.content_box {
+  background: white;
+  margin-top: 16px;
+  margin-bottom: 50px;
+  padding-bottom: 16px;
+}
+
+/* line 63, ../SCSS/main.scss */
+.inivisible {
+  visibility: none;
+}
+
+/* line 67, ../SCSS/main.scss */
+.video {
+  /*background: $seastorm;*/
+  height: 450px;
+  margin-bottom: 15px;
+}
+
+/* line 75, ../SCSS/main.scss */
+.gallerytickets {
+  margin-bottom: 15px;
+  height: 100px;
+}
+
+/* line 84, ../SCSS/main.scss */
+.tickets {
+  margin-left: 15px;
+  height: 100%;
+  background: #ffb34e;
+  color: white;
+  font-size: 8px;
+  text-align: center;
+  border-radius: none;
+}
+
+/* line 94, ../SCSS/main.scss */
+nav.contentNav {
+  position: relative;
+  left: -20px;
+}
+
+/* line 99, ../SCSS/main.scss */
+footer {
+  padding-bottom: 16px;
+}
+
+/* line 104, ../SCSS/main.scss */
+p {
+  font-size: 16px;
+  font-family: "Helvetica neue", sans-serif;
+  line-height: 24px;
+}
+
+/* line 110, ../SCSS/main.scss */
+.docabout {
+  margin-top: 15px;
+}

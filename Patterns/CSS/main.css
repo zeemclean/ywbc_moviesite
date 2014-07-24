@@ -1,21 +1,33 @@
 @import url(http://fonts.googleapis.com/css?family=Stint+Ultra+Condensed|Raleway:400,300,900,700);
-/* line 2, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_nav.scss */
+/* line 2, ../SCSS/_nav.scss */
 li {
   float: left;
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   list-style: none;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 1px 10px 1px 10px;
   letter-spacing: 2px;
+  color: #805a6a;
+  border-right: 3px solid #805a6a;
 }
 
-/* line 12, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_nav.scss */
+/* line 16, ../SCSS/_nav.scss */
+li:last-of-type {
+  border: none;
+}
+
+/* line 20, ../SCSS/_nav.scss */
+li:hover {
+  color: #ec4300;
+}
+
+/* line 24, ../SCSS/_nav.scss */
 nav {
   margin: auto;
 }
 
-/* line 10, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_colours.scss */
+/* line 10, ../SCSS/_colours.scss */
 .colour_palette {
   width: 80px;
   height: 80px;
@@ -25,28 +37,28 @@ nav {
   box-shadow: 2px 2px 3px #888;
   margin-top: 5px;
 }
-/* line 20, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_colours.scss */
+/* line 20, ../SCSS/_colours.scss */
 .colour_palette.colour_palette__sunshine {
   background: #ffb34e;
 }
-/* line 23, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_colours.scss */
+/* line 23, ../SCSS/_colours.scss */
 .colour_palette.colour_palette__seastorm {
   background: #805a6a;
 }
-/* line 26, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_colours.scss */
+/* line 26, ../SCSS/_colours.scss */
 .colour_palette.colour_palette__rust {
   background: #ec4300;
 }
-/* line 29, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_colours.scss */
+/* line 29, ../SCSS/_colours.scss */
 .colour_palette.colour_palette__tugboat {
   background: #a42812;
 }
-/* line 32, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_colours.scss */
+/* line 32, ../SCSS/_colours.scss */
 .colour_palette.colour_palette__pelican {
   background: #4c0630;
 }
 
-/* line 5, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_headings.scss */
+/* line 5, ../SCSS/_headings.scss */
 h1 {
   font-size: 3em;
   font-family: 'Raleway', sans-serif;
@@ -57,7 +69,7 @@ h1 {
   margin-bottom: 0px;
 }
 
-/* line 15, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_headings.scss */
+/* line 15, ../SCSS/_headings.scss */
 h2 {
   font-size: 2.5em;
   font-family: "Stint Ultra Condensed", cursive;
@@ -66,7 +78,7 @@ h2 {
   margin-bottom: 0;
 }
 
-/* line 22, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_headings.scss */
+/* line 22, ../SCSS/_headings.scss */
 h3 {
   font-size: 1.3em;
   font-family: "Raleway", sans-serif;
@@ -76,12 +88,29 @@ h3 {
   margin-bottom: 0;
 }
 
-/* line 30, /Users/zoe.mclean/Sites/Movie Site/Patterns/SCSS/_headings.scss */
+/* line 30, ../SCSS/_headings.scss */
 h4 {
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  margin-top: 0;
+  font-weight: 700;
+  margin-top: 5px;
   margin-bottom: 0;
+  font-style: italic;
+  color: #666;
+}
+
+/* line 41, ../SCSS/_headings.scss */
+h5 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* line 49, ../SCSS/_headings.scss */
+h6 {
+  font-family: "Raleway", sans-serif;
+  color: #666;
+  margin-top: 5px;
 }
 
 /* line 7, ../SCSS/main.scss */

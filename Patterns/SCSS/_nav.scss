@@ -5,10 +5,26 @@ li {
 	font-weight: 900;
 	list-style: none;
 	text-transform: uppercase;
-	padding: 10px;
+	padding: 1px 10px 1px 10px ;
 	letter-spacing: 2px;
+	color: $seastorm;
+	border-right: 3px solid $seastorm;
+
 
 }
+
+li:last-of-type {
+	border: none;
+}
+
+li:hover {
+	color: $rust;
+}
+
 nav {
 	margin: auto;
+ 
+
 }
+
+

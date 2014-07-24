@@ -29,8 +29,25 @@ h3 {
 }
 h4 {
 	font-family: $raleway;
-	font-weight: 400;
-	margin-top: 0;
+	font-weight: 700;
+	margin-top: 5px;
 	margin-bottom: 0;
+	font-style: italic;
+	color: #666;
+
 	
+}
+
+h5 {
+	font-family: $raleway;
+	font-weight: 700;
+	color: #666;
+	margin-top: 5px;
+
+}
+
+h6 {
+	font-family: $raleway;
+	color: #666;
+	margin-top: 5px;
 }

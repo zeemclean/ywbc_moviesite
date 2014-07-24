@@ -12,8 +12,11 @@
 	<?php 
 		
 		require_once('includes/colours.php');
-		require_once('includes/headings.php');
-		require_once('includes/nav.php');
+	?>
+	<div class="whiteback">
+		<?php require_once('includes/headings.php'); ?>
+	</div>
+		<?php require_once('includes/nav.php'); ?>
 
 	 ?>
 	</container>

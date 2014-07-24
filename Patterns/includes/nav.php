@@ -2,11 +2,11 @@
 
 $pages = array(
               'The Film',
-              '|',
+
               'Barrel Chasers',
-              '|',
+
               'Explore Lobitos',
-              '|',
+
               'News'
               );
 

@@ -1,0 +1,121 @@
+
+@import "variables";
+@import "nav";
+@import "colours";
+@import "headings";
+@import "header";
+@import "gallery";
+@import url(http://fonts.googleapis.com/css?family=Stint+Ultra+Condensed|Raleway:400,300,900,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700|Roboto+Condensed:400italic,400,300,700);
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0 auto;
+    background: url("../assets/images/home_bg--short.jpg") no-repeat fixed;
+    background-position: center top; 
+
+}
+
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    font-size:0;
+}
+ 
+.clearfix {
+    display: inline-block;
+}
+ 
+
+ 
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+article {
+	@extend.clearfix;
+}
+
+
+.content_box {
+    background: white;
+
+    margin-top: 16px;
+    margin-bottom: 50px;
+    padding-bottom: 16px;
+
+
+}
+
+.inivisible {
+    visibility: none;
+}
+
+.video {
+    /*background: $seastorm;*/
+    height:450px;
+    margin-bottom: 15px;
+
+
+}
+
+.gallerytickets {
+    margin-bottom:15px;
+    height: 100px;
+}
+
+
+
+
+
+.tickets {
+    margin-left: 15px;
+    height: 100%;
+    background: $sunshine;
+    color: white;
+    font-size: 8px;
+    text-align: center;
+    border-radius: none;
+}
+
+nav.contentNav {
+    position: relative;
+    left: -20px;
+}
+
+footer {
+    padding-bottom: 16px;
+}
+
+
+p {
+    font-size: 16px;
+    font-family: $paragraph;
+    line-height: 24px; 
+}
+
+.docabout {
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+
+

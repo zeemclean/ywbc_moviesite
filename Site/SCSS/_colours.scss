@@ -1,0 +1,36 @@
+$sunshine : #ffb34e;
+$seastorm : #805a6a;
+$rust : #ec4300;
+$tugboat : #a42812;
+$pelican : #4c0630;
+$white: #ffffff;
+
+
+
+
+.colour_palette{
+	width: 80px;
+	height: 80px;
+	border: 5px solid #fff;
+	float:left;
+	margin-right: 6px;
+	box-shadow: 2px 2px 3px #888;
+	margin-top: 5px;
+
+
+	&.colour_palette__sunshine {
+		background: $sunshine;
+	}
+	&.colour_palette__seastorm {
+		background: $seastorm;
+	}
+	&.colour_palette__rust {
+		background: $rust;
+	}
+	&.colour_palette__tugboat {
+		background: $tugboat;
+	}
+	&.colour_palette__pelican {
+		background: $pelican;
+	}
+}

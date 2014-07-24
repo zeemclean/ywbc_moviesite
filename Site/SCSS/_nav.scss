@@ -1,0 +1,90 @@
+
+nav ul {
+
+	font-family: $raleway;
+	font-size: 16px;
+	list-style-type: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+	
+
+	& li {
+	float:left;
+	padding: 1px 10px 1px 10px ;
+	border-right: 3px solid white;
+	}
+	
+	& li:last-of-type {
+	border: none;
+	}
+}
+
+
+
+/* pseudo code!
+
+I want to create three different nav styles. 
+Mixin
+three nav classes: headerNav, contentNav and footerNav.
+They share some attributes. 
+Things that change:
+color - border and text
+hover color
+active color
+weight
+size 
+
+
+*/
+
+@mixin navStyle($color, $hoverColor, $activeColor, $weight, $fontSize){
+	li {
+		font-weight: $weight;
+		border-color: $color;
+		font-size: $fontSize;
+
+
+		a {
+		color: $color;
+		
+		
+			&:hover {
+			color: $hoverColor;
+			text-decoration: none;
+			}
+		}
+		&.inactive {
+		color: $color;
+		}
+
+		&.active {
+			a {
+				color: $activeColor;
+			}
+		}
+	}
+
+}
+
+
+$navVars: headerNav white $seastorm $sunshine 900 18px, 
+contentNav $rust $sunshine $tugboat 700 16px, 
+footerNav white $rust $sunshine normal 16px;
+
+
+@each $var in $navVars {
+	$class: nth($var, 1);
+	$color: nth($var, 2);
+	$hoverColor: nth($var, 3);
+	$activeColor: nth($var, 4);
+	$weight: nth($var, 5);
+	$fontSize: nth($var, 6);
+
+	.#{$class} {
+	@include navStyle($color, $hoverColor, $activeColor, $weight, $fontSize);
+	}
+}
+
+
+
