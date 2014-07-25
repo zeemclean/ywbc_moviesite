@@ -54,6 +54,7 @@ article {
     background: white;
 
     margin-top: 16px;
+
     margin-bottom: 50px;
     padding-bottom: 16px;
 
@@ -81,15 +82,25 @@ article {
 
 
 
+
 .tickets {
     margin-left: 15px;
     height: 100%;
     background: $sunshine;
     color: white;
-    font-size: 8px;
     text-align: center;
     border-radius: none;
 }
+
+
+.releasedate {
+    padding-top: 16px;
+    text-align:center;
+    color: $swell;
+    padding-bottom:16px; 
+}
+
+
 
 nav.contentNav {
     position: relative;
@@ -111,8 +122,20 @@ p {
     margin-top: 15px;
 }
 
+video::-webkit-media-controls-panel{
+    background-color: rgba($swell, 0.9)
+}
 
+video::-webkit-media-controls-time-remaining-display{
+    font-family:$roboto;
+    font-weight: 300;
+}
 
+audio::-webkit-media-controls-play-button, video::-webkit-media-controls-play-button {
+    background-image: url('../assets/images/playicon--white.png');
+    background-size: 100%;
+    -webkit-appearance: none;
+}
 
 
 

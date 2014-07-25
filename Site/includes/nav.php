@@ -18,7 +18,7 @@ $pages['barrelchasers'] = "Barrel Chasers";
 $pages['lobitos'] = "Explore Lobitos";
 
 
-$pages['news'] = "Sign up for News";
+$pages['signup'] = "Sign up for News";
 
 
 //Make a function that creates a nav from an array

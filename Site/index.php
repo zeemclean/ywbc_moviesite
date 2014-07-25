@@ -42,7 +42,44 @@ echo "<body>";
  
 require_once('includes/header.php');    
  
-require_once('includes/content.php');
+//logic that decides which content file to serve, depending on the URL
+/*First, find out if there is even a value in $_GET['pages'] using the built in function 'is set', 
+or isset(). If it's not set, they must be at the homepage, so require_once the 
+includes/content-home.php . Remember that if you want the opposite of something, eg, not-equals 
+or not-true, you can use an exclamation mark, so in this case if(!isset()){} will mean 'if NOT set'*/
+
+if(!isset($_GET['page'])){
+	require_once('includes/content-home.php');
+}
+
+ 
+// If it IS set, go into another 'if' statement, which determines if there is a content
+// file for this page in the 'includes' directory. If that file exists, require it once. 
+// You will need to concatenate  the $_GET['page'] variable with some strings to correctly 
+// point to the includes/content-??.php file.
+ 
+else{
+ 	if(isset($_GET['page'])) {
+
+	$content_file = "includes/content-".$_GET['page'].".php";
+			
+			if(file_exists($content_file)) {
+					require_once($content_file);
+				}
+	else {
+		require_once('includes/content-404.php');
+	}
+
+
+ 		}
+
+
+
+}
+// If it is not the home page, and there is no content-??.php file for it, require the 
+// content-404.php file instead, and add an appropriate message.*/
+
+
  
  
 require_once('includes/footer.php');

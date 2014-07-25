@@ -3,7 +3,7 @@ $stint : 'Stint Ultra Condensed', cursive;
 
 
 h1 {
-	font-size: 3.5em;
+	font-size: 48px;
 	font-family: $roboto;
 	font-weight: 300;
 	color: $jetty;
@@ -15,11 +15,14 @@ h1 {
 }
 h1.buttontext {
 	color: white;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+
 }
 
-
 h2 {
-	font-size: 2.5em;
+	font-size: 40px;
 	font-family: $robocon;
 	color: $horizon;
 	margin-top: 0;
@@ -27,12 +30,14 @@ h2 {
 	font-weight: 700;
 }
 h3 {
-	font-size: 1.3em;
+	font-size: 24px;
 	font-family: $roboto;
-	font-weight: 400;
+	font-weight: 300;
 	color: $swell;
 	margin-top: 0;
 	margin-bottom: 0;
+	text-transform: uppercase;
+	letter-spacing:6px;
 }
 h4 {
 	font-family: $roboto;
@@ -40,21 +45,15 @@ h4 {
 	margin-top: 5px;
 	margin-bottom: 0;
 	font-style: italic;
-	color: #666;
-
-	
+	color: #666;	
+}
+ 
+.textsmall {
+	font-size: 16px;
 }
 
-h5 {
-	font-family: $raleway;
-	font-weight: 700;
-	color: #666;
-	margin-top: 5px;
 
-}
 
-h6 {
-	font-family: $raleway;
-	color: #666;
-	margin-top: 5px;
-}
+
+
+

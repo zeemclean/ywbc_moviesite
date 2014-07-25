@@ -3,7 +3,7 @@ header {
 }
 
 img.logo {
-	padding-left:20px;
+
 	margin-top: 64px;
     position: center;
     margin-bottom: 32px;
@@ -11,10 +11,9 @@ img.logo {
 }
 
 nav.headerNav {
-	margin-top: 48px;
 	position: relative;
-	left: 22.5%;
-	
+	margin-left: 160px; 
+	z-index: 50;	
 
 }
 

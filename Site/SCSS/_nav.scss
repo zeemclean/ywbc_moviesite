@@ -6,11 +6,12 @@ nav ul {
 	list-style-type: none;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	postion:relative;
 
 	
 
 	& li {
-	float:left;
+	float: left;
 	padding: 1px 10px 1px 10px ;
 	border-right: 3px solid white;
 	}

@@ -7,14 +7,15 @@ nav ul {
   list-style-type: none;
   text-transform: uppercase;
   letter-spacing: 2px;
+  postion: relative;
 }
-/* line 12, ../SCSS/_nav.scss */
+/* line 13, ../SCSS/_nav.scss */
 nav ul li {
   float: left;
   padding: 1px 10px 1px 10px;
   border-right: 3px solid white;
 }
-/* line 18, ../SCSS/_nav.scss */
+/* line 19, ../SCSS/_nav.scss */
 nav ul li:last-of-type {
   border: none;
 }
@@ -34,74 +35,74 @@ size
 
 
 */
-/* line 42, ../SCSS/_nav.scss */
+/* line 43, ../SCSS/_nav.scss */
 .headerNav li {
   font-weight: 900;
   border-color: white;
   font-size: 18px;
 }
-/* line 48, ../SCSS/_nav.scss */
+/* line 49, ../SCSS/_nav.scss */
 .headerNav li a {
   color: white;
 }
-/* line 52, ../SCSS/_nav.scss */
+/* line 53, ../SCSS/_nav.scss */
 .headerNav li a:hover {
   color: #4d8c65;
   text-decoration: none;
 }
-/* line 57, ../SCSS/_nav.scss */
+/* line 58, ../SCSS/_nav.scss */
 .headerNav li.inactive {
   color: white;
 }
-/* line 62, ../SCSS/_nav.scss */
+/* line 63, ../SCSS/_nav.scss */
 .headerNav li.active a {
   color: #ffb34e;
 }
 
-/* line 42, ../SCSS/_nav.scss */
+/* line 43, ../SCSS/_nav.scss */
 .contentNav li {
   font-weight: 700;
   border-color: #4d3815;
   font-size: 16px;
 }
-/* line 48, ../SCSS/_nav.scss */
+/* line 49, ../SCSS/_nav.scss */
 .contentNav li a {
   color: #4d3815;
 }
-/* line 52, ../SCSS/_nav.scss */
+/* line 53, ../SCSS/_nav.scss */
 .contentNav li a:hover {
   color: #ffb34e;
   text-decoration: none;
 }
-/* line 57, ../SCSS/_nav.scss */
+/* line 58, ../SCSS/_nav.scss */
 .contentNav li.inactive {
   color: #4d3815;
 }
-/* line 62, ../SCSS/_nav.scss */
+/* line 63, ../SCSS/_nav.scss */
 .contentNav li.active a {
   color: #8c8457;
 }
 
-/* line 42, ../SCSS/_nav.scss */
+/* line 43, ../SCSS/_nav.scss */
 .footerNav li {
   font-weight: normal;
   border-color: white;
   font-size: 16px;
 }
-/* line 48, ../SCSS/_nav.scss */
+/* line 49, ../SCSS/_nav.scss */
 .footerNav li a {
   color: white;
 }
-/* line 52, ../SCSS/_nav.scss */
+/* line 53, ../SCSS/_nav.scss */
 .footerNav li a:hover {
   color: #3b6375;
   text-decoration: none;
 }
-/* line 57, ../SCSS/_nav.scss */
+/* line 58, ../SCSS/_nav.scss */
 .footerNav li.inactive {
   color: white;
 }
-/* line 62, ../SCSS/_nav.scss */
+/* line 63, ../SCSS/_nav.scss */
 .footerNav li.active a {
   color: #ffb34e;
 }
@@ -139,7 +140,7 @@ size
 
 /* line 5, ../SCSS/_headings.scss */
 h1 {
-  font-size: 3.5em;
+  font-size: 48px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: #4d3815;
@@ -152,11 +153,14 @@ h1 {
 /* line 16, ../SCSS/_headings.scss */
 h1.buttontext {
   color: white;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
 }
 
-/* line 21, ../SCSS/_headings.scss */
+/* line 24, ../SCSS/_headings.scss */
 h2 {
-  font-size: 2.5em;
+  font-size: 40px;
   font-family: "Roboto Condensed", sans-serif;
   color: #3b6375;
   margin-top: 0;
@@ -164,17 +168,19 @@ h2 {
   font-weight: 700;
 }
 
-/* line 29, ../SCSS/_headings.scss */
+/* line 32, ../SCSS/_headings.scss */
 h3 {
-  font-size: 1.3em;
+  font-size: 24px;
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #4d8c65;
   margin-top: 0;
   margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 6px;
 }
 
-/* line 37, ../SCSS/_headings.scss */
+/* line 42, ../SCSS/_headings.scss */
 h4 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -184,19 +190,9 @@ h4 {
   color: #666;
 }
 
-/* line 48, ../SCSS/_headings.scss */
-h5 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  color: #666;
-  margin-top: 5px;
-}
-
-/* line 56, ../SCSS/_headings.scss */
-h6 {
-  font-family: "Raleway", sans-serif;
-  color: #666;
-  margin-top: 5px;
+/* line 51, ../SCSS/_headings.scss */
+.textsmall {
+  font-size: 16px;
 }
 
 /* line 1, ../SCSS/_header.scss */
@@ -206,7 +202,6 @@ header {
 
 /* line 5, ../SCSS/_header.scss */
 img.logo {
-  padding-left: 20px;
   margin-top: 64px;
   position: center;
   margin-bottom: 32px;
@@ -214,9 +209,9 @@ img.logo {
 
 /* line 13, ../SCSS/_header.scss */
 nav.headerNav {
-  margin-top: 48px;
   position: relative;
-  left: 22.5%;
+  margin-left: 160px;
+  z-index: 50;
 }
 
 /* line 1, ../SCSS/_gallery.scss */
@@ -323,54 +318,79 @@ body {
   padding-bottom: 16px;
 }
 
-/* line 63, ../SCSS/main.scss */
+/* line 64, ../SCSS/main.scss */
 .inivisible {
   visibility: none;
 }
 
-/* line 67, ../SCSS/main.scss */
+/* line 68, ../SCSS/main.scss */
 .video {
   /*background: $seastorm;*/
   height: 450px;
   margin-bottom: 15px;
 }
 
-/* line 75, ../SCSS/main.scss */
+/* line 76, ../SCSS/main.scss */
 .gallerytickets {
   margin-bottom: 15px;
   height: 100px;
 }
 
-/* line 84, ../SCSS/main.scss */
+/* line 86, ../SCSS/main.scss */
 .tickets {
   margin-left: 15px;
   height: 100%;
   background: #ffb34e;
   color: white;
-  font-size: 8px;
   text-align: center;
   border-radius: none;
 }
 
-/* line 94, ../SCSS/main.scss */
+/* line 96, ../SCSS/main.scss */
+.releasedate {
+  padding-top: 16px;
+  text-align: center;
+  color: #4d8c65;
+  padding-bottom: 16px;
+}
+
+/* line 105, ../SCSS/main.scss */
 nav.contentNav {
   position: relative;
   left: -20px;
 }
 
-/* line 99, ../SCSS/main.scss */
+/* line 110, ../SCSS/main.scss */
 footer {
   padding-bottom: 16px;
 }
 
-/* line 104, ../SCSS/main.scss */
+/* line 115, ../SCSS/main.scss */
 p {
   font-size: 16px;
   font-family: "Helvetica neue", sans-serif;
   line-height: 24px;
 }
 
-/* line 110, ../SCSS/main.scss */
+/* line 121, ../SCSS/main.scss */
 .docabout {
   margin-top: 15px;
+}
+
+/* line 125, ../SCSS/main.scss */
+video::-webkit-media-controls-panel {
+  background-color: rgba(77, 140, 101, 0.9);
+}
+
+/* line 129, ../SCSS/main.scss */
+video::-webkit-media-controls-time-remaining-display {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+/* line 134, ../SCSS/main.scss */
+audio::-webkit-media-controls-play-button, video::-webkit-media-controls-play-button {
+  background-image: url("../assets/images/playicon--white.png");
+  background-size: 100%;
+  -webkit-appearance: none;
 }
