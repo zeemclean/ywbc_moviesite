@@ -11,13 +11,54 @@
     box-sizing: border-box;
 }
 
+
+$bgVars:    'home' $bghome, 
+            'barrelchasers' $bgcrew, 
+            'lobitos' $bgtown,
+            'signup' $bgnews;
+
+
 body {
 
     margin: 0 auto;
-    background: url("../assets/images/home_bg--short.jpg") no-repeat fixed;
     background-position: center top; 
 
 }
+
+
+body.home {
+    margin: 0 auto;
+    background: $bghome;
+    background-position: center top; 
+}
+
+body.barrelchasers {
+    margin: 0 auto;
+    background: $bgcrew;
+    background-position: center top; 
+}
+
+body.lobitos {
+    margin: 0 auto;
+    background: $bgtown;
+    background-position: center top;
+}
+
+body.signup {
+    margin: 0 auto;
+    background: $bgnews;
+    background-position: center top;
+}
+
+/*Variable backgrounds
+
+I want to make each page have a different background.
+I have made each jpg a variable in the variables scss file.
+so i need to make:
+ an array with the page name and its corresponding jpg,
+ and an if or case statement whih assigns them correctly.
+ See nav assignation and if/case practice files.
+*/
 
 
 
@@ -74,12 +115,15 @@ article {
 }
 
 .gallerytickets {
-    margin-bottom:15px;
+
     height: 100px;
 }
 
 
-
+.ticket_box {
+    margin-right: 15px;
+    width: inherit;
+}
 
 
 
@@ -90,6 +134,9 @@ article {
     color: white;
     text-align: center;
     border-radius: none;
+    height: 100px;
+    width: 143px;
+    float: right;
 }
 
 
@@ -116,6 +163,18 @@ p {
     font-size: 16px;
     font-family: $paragraph;
     line-height: 24px; 
+    padding-bottom:16px;
+}
+
+#synopsis {
+    padding-top: 0px;
+    margin-top:0px;
+}
+#credits {
+    padding-top:0px;
+    margin-top:0px;
+    font-size:13px; 
+    color: $jetty;
 }
 
 .docabout {
@@ -123,7 +182,7 @@ p {
 }
 
 video::-webkit-media-controls-panel{
-    background-color: rgba($swell, 0.9)
+    background-color: rgba($horizon, 0.9)
 }
 
 video::-webkit-media-controls-time-remaining-display{
@@ -135,6 +194,24 @@ audio::-webkit-media-controls-play-button, video::-webkit-media-controls-play-bu
     background-image: url('../assets/images/playicon--white.png');
     background-size: 100%;
     -webkit-appearance: none;
+}
+
+.biopic{
+    width:100%;
+    
+}
+
+a.bio_links{
+    margin-left:16px;
+}
+
+.lobitos_gallery {
+    width:100%
+}
+
+.gallery {
+    float:left;
+    margin-left:15px;
 }
 
 

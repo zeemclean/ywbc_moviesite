@@ -1,50 +1,43 @@
-.gallerybox {
+.gallery_wrap{
   
     height: 100px;
-    width:1000px;
-
-    margin: 0px 0px 0px 64px;
+    width:592px;
+    margin: 0 auto;
     overflow:hidden;
 
 
 
-}
-.gallerycontainer {
-	width:600px;
-	height:100px;
-
-	background: -webkit-linear-gradient(left, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1));
 
 }
+.gallery_storage {
+    position:relative;
+    left:0;
+    top:0;
+    width:1150px;
+}
+
+
 .gallerythumb {
-	margin-right:5px;
-}
-
-.right {
-	left:77%;
-	top: 0;
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,1)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right,  rgba(255,255,255,0), rgba(255,255,255,1)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right,  rgba(255,255,255,0), rgba(255,255,255,1)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right,  rgba(255,255,255,0), rgba(255,255,255,1));
-}
-
-.left{
-	background: -webkit-linear-gradient(right, rgba(255,255,255,0), rgba(255,255,255,1)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(left,  rgba(255,255,255,0), rgba(255,255,255,1)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(left,  rgba(255,255,255,0), rgba(255,255,255,1)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to left,  rgba(255,255,255,0), rgba(255,255,255,1));
 
 }
 
-.gallerycover{
-	z-index: 20;
-	position: absolute;
-	height:105px;
-	width: 90px;
 
+
+.leadimage {
+    -webkit-animation: bannermove 27000ms linear infinite;
 
 }
+ 
+
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -1079px;
+ }
+ 
+}
+ 
+

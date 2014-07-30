@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700|Roboto+Condensed:400italic,400,300,700);
 /* line 2, ../SCSS/_nav.scss */
 nav ul {
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   list-style-type: none;
   text-transform: uppercase;
@@ -47,7 +47,7 @@ size
 }
 /* line 53, ../SCSS/_nav.scss */
 .headerNav li a:hover {
-  color: #4d8c65;
+  color: #ffdcad;
   text-decoration: none;
 }
 /* line 58, ../SCSS/_nav.scss */
@@ -62,25 +62,25 @@ size
 /* line 43, ../SCSS/_nav.scss */
 .contentNav li {
   font-weight: 700;
-  border-color: #4d3815;
+  border-color: #666666;
   font-size: 16px;
 }
 /* line 49, ../SCSS/_nav.scss */
 .contentNav li a {
-  color: #4d3815;
+  color: #666666;
 }
 /* line 53, ../SCSS/_nav.scss */
 .contentNav li a:hover {
-  color: #ffb34e;
+  color: #ffdcad;
   text-decoration: none;
 }
 /* line 58, ../SCSS/_nav.scss */
 .contentNav li.inactive {
-  color: #4d3815;
+  color: #666666;
 }
 /* line 63, ../SCSS/_nav.scss */
 .contentNav li.active a {
-  color: #8c8457;
+  color: #3b6375;
 }
 
 /* line 43, ../SCSS/_nav.scss */
@@ -95,7 +95,7 @@ size
 }
 /* line 53, ../SCSS/_nav.scss */
 .footerNav li a:hover {
-  color: #3b6375;
+  color: #ffdcad;
   text-decoration: none;
 }
 /* line 58, ../SCSS/_nav.scss */
@@ -141,58 +141,82 @@ size
 /* line 5, ../SCSS/_headings.scss */
 h1 {
   font-size: 48px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  color: #4d3815;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  color: #666;
   text-transform: uppercase;
   letter-spacing: 5px;
   margin-bottom: 0px;
   margin-top: 0px;
+  padding-top: 16px;
+  line-height: 48px;
+  padding-bottom: 0px;
 }
 
-/* line 16, ../SCSS/_headings.scss */
+/* line 20, ../SCSS/_headings.scss */
 h1.buttontext {
   color: white;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 700;
   text-align: center;
-}
-
-/* line 24, ../SCSS/_headings.scss */
-h2 {
-  font-size: 40px;
-  font-family: "Roboto Condensed", sans-serif;
-  color: #3b6375;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 18px;
 }
 
 /* line 32, ../SCSS/_headings.scss */
+.text--small {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+/* line 36, ../SCSS/_headings.scss */
+.text--spread {
+  letter-spacing: 10px;
+}
+
+/* line 40, ../SCSS/_headings.scss */
+h2 {
+  font-size: 36px;
+  font-family: "Raleway", sans-serif;
+  color: #4d3815;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+  text-transform: none;
+  letter-spacing: -2px;
+}
+
+/* line 52, ../SCSS/_headings.scss */
 h3 {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  color: #4d8c65;
+  color: #3b6375;
   margin-top: 0;
   margin-bottom: 0;
   text-transform: uppercase;
   letter-spacing: 6px;
 }
 
-/* line 42, ../SCSS/_headings.scss */
+/* line 62, ../SCSS/_headings.scss */
 h4 {
+  font-size: 17px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   margin-top: 5px;
   margin-bottom: 0;
   font-style: italic;
-  color: #666;
+  color: #4d3815;
 }
 
-/* line 51, ../SCSS/_headings.scss */
-.textsmall {
-  font-size: 16px;
+/* line 72, ../SCSS/_headings.scss */
+.textlink {
+  color: #3b6375;
+}
+/* line 75, ../SCSS/_headings.scss */
+.textlink:hover {
+  color: #ffb34e;
 }
 
 /* line 1, ../SCSS/_header.scss */
@@ -215,61 +239,36 @@ nav.headerNav {
 }
 
 /* line 1, ../SCSS/_gallery.scss */
-.gallerybox {
+.gallery_wrap {
   height: 100px;
-  width: 1000px;
-  margin: 0px 0px 0px 64px;
+  width: 592px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
 /* line 12, ../SCSS/_gallery.scss */
-.gallerycontainer {
-  width: 600px;
-  height: 100px;
-  background: -webkit-linear-gradient(left, white, white, white);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, white, white, white);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, white, white, white);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #ffffff, #ffffff, #ffffff);
-}
-
-/* line 22, ../SCSS/_gallery.scss */
-.gallerythumb {
-  margin-right: 5px;
+.gallery_storage {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 1150px;
 }
 
 /* line 26, ../SCSS/_gallery.scss */
-.right {
-  left: 77%;
-  top: 0;
-  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), white);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, rgba(255, 255, 255, 0), white);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, rgba(255, 255, 255, 0), white);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+.leadimage {
+  -webkit-animation: bannermove 27000ms linear infinite;
 }
 
-/* line 35, ../SCSS/_gallery.scss */
-.left {
-  background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0), white);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(left, rgba(255, 255, 255, 0), white);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), white);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), #ffffff);
-}
+@-webkit-keyframes "bannermove" {
+  /* line 34, ../SCSS/_gallery.scss */
+  0% {
+    margin-left: 0px;
+  }
 
-/* line 43, ../SCSS/_gallery.scss */
-.gallerycover {
-  z-index: 20;
-  position: absolute;
-  height: 105px;
-  width: 90px;
+  /* line 37, ../SCSS/_gallery.scss */
+  100% {
+    margin-left: -1079px;
+  }
 }
 
 /* line 10, ../SCSS/main.scss */
@@ -277,14 +276,50 @@ nav.headerNav {
   box-sizing: border-box;
 }
 
-/* line 14, ../SCSS/main.scss */
+/* line 21, ../SCSS/main.scss */
 body {
   margin: 0 auto;
-  background: url("../assets/images/home_bg--short.jpg") no-repeat fixed;
   background-position: center top;
 }
 
-/* line 24, ../SCSS/main.scss */
+/* line 29, ../SCSS/main.scss */
+body.home {
+  margin: 0 auto;
+  background: url("../assets/images/home_bg--alt.jpg") no-repeat fixed;
+  background-position: center top;
+}
+
+/* line 35, ../SCSS/main.scss */
+body.barrelchasers {
+  margin: 0 auto;
+  background: url("../assets/images/crew_bg--short.jpg") no-repeat fixed;
+  background-position: center top;
+}
+
+/* line 41, ../SCSS/main.scss */
+body.lobitos {
+  margin: 0 auto;
+  background: url("../assets/images/lobitos_bg--boat.jpg") no-repeat fixed;
+  background-position: center top;
+}
+
+/* line 47, ../SCSS/main.scss */
+body.signup {
+  margin: 0 auto;
+  background: url("../assets/images/news_bg.jpg") no-repeat fixed;
+  background-position: center top;
+}
+
+/*Variable backgrounds
+
+I want to make each page have a different background.
+I have made each jpg a variable in the variables scss file.
+so i need to make:
+ an array with the page name and its corresponding jpg,
+ and an if or case statement whih assigns them correctly.
+ See nav assignation and if/case practice files.
+*/
+/* line 65, ../SCSS/main.scss */
 .clearfix:after, article:after {
   content: ".";
   display: block;
@@ -295,22 +330,22 @@ body {
   font-size: 0;
 }
 
-/* line 34, ../SCSS/main.scss */
+/* line 75, ../SCSS/main.scss */
 .clearfix, article {
   display: inline-block;
 }
 
-/* line 40, ../SCSS/main.scss */
+/* line 81, ../SCSS/main.scss */
 * html .clearfix, * html article {
   height: 1%;
 }
 
-/* line 44, ../SCSS/main.scss */
+/* line 85, ../SCSS/main.scss */
 .clearfix, article {
   display: block;
 }
 
-/* line 53, ../SCSS/main.scss */
+/* line 94, ../SCSS/main.scss */
 .content_box {
   background: white;
   margin-top: 16px;
@@ -318,25 +353,30 @@ body {
   padding-bottom: 16px;
 }
 
-/* line 64, ../SCSS/main.scss */
+/* line 105, ../SCSS/main.scss */
 .inivisible {
   visibility: none;
 }
 
-/* line 68, ../SCSS/main.scss */
+/* line 109, ../SCSS/main.scss */
 .video {
   /*background: $seastorm;*/
   height: 450px;
   margin-bottom: 15px;
 }
 
-/* line 76, ../SCSS/main.scss */
+/* line 117, ../SCSS/main.scss */
 .gallerytickets {
-  margin-bottom: 15px;
   height: 100px;
 }
 
-/* line 86, ../SCSS/main.scss */
+/* line 123, ../SCSS/main.scss */
+.ticket_box {
+  margin-right: 15px;
+  width: inherit;
+}
+
+/* line 130, ../SCSS/main.scss */
 .tickets {
   margin-left: 15px;
   height: 100%;
@@ -344,9 +384,12 @@ body {
   color: white;
   text-align: center;
   border-radius: none;
+  height: 100px;
+  width: 143px;
+  float: right;
 }
 
-/* line 96, ../SCSS/main.scss */
+/* line 143, ../SCSS/main.scss */
 .releasedate {
   padding-top: 16px;
   text-align: center;
@@ -354,43 +397,79 @@ body {
   padding-bottom: 16px;
 }
 
-/* line 105, ../SCSS/main.scss */
+/* line 152, ../SCSS/main.scss */
 nav.contentNav {
   position: relative;
   left: -20px;
 }
 
-/* line 110, ../SCSS/main.scss */
+/* line 157, ../SCSS/main.scss */
 footer {
   padding-bottom: 16px;
 }
 
-/* line 115, ../SCSS/main.scss */
+/* line 162, ../SCSS/main.scss */
 p {
   font-size: 16px;
   font-family: "Helvetica neue", sans-serif;
   line-height: 24px;
+  padding-bottom: 16px;
 }
 
-/* line 121, ../SCSS/main.scss */
+/* line 169, ../SCSS/main.scss */
+#synopsis {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+/* line 173, ../SCSS/main.scss */
+#credits {
+  padding-top: 0px;
+  margin-top: 0px;
+  font-size: 13px;
+  color: #4d3815;
+}
+
+/* line 180, ../SCSS/main.scss */
 .docabout {
   margin-top: 15px;
 }
 
-/* line 125, ../SCSS/main.scss */
+/* line 184, ../SCSS/main.scss */
 video::-webkit-media-controls-panel {
-  background-color: rgba(77, 140, 101, 0.9);
+  background-color: rgba(59, 99, 117, 0.9);
 }
 
-/* line 129, ../SCSS/main.scss */
+/* line 188, ../SCSS/main.scss */
 video::-webkit-media-controls-time-remaining-display {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
-/* line 134, ../SCSS/main.scss */
+/* line 193, ../SCSS/main.scss */
 audio::-webkit-media-controls-play-button, video::-webkit-media-controls-play-button {
   background-image: url("../assets/images/playicon--white.png");
   background-size: 100%;
   -webkit-appearance: none;
+}
+
+/* line 199, ../SCSS/main.scss */
+.biopic {
+  width: 100%;
+}
+
+/* line 204, ../SCSS/main.scss */
+a.bio_links {
+  margin-left: 16px;
+}
+
+/* line 208, ../SCSS/main.scss */
+.lobitos_gallery {
+  width: 100%;
+}
+
+/* line 212, ../SCSS/main.scss */
+.gallery {
+  float: left;
+  margin-left: 15px;
 }

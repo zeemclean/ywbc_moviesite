@@ -1,7 +1,7 @@
 
 nav ul {
 
-	font-family: $roboto;
+	font-family: $raleway;
 	font-size: 16px;
 	list-style-type: none;
 	text-transform: uppercase;
@@ -69,9 +69,9 @@ size
 }
 
 
-$navVars: headerNav white $swell $sunshine 900 18px, 
-contentNav $jetty $sunshine $wave 700 16px, 
-footerNav white $horizon $sunshine normal 16px;
+$navVars: headerNav white $bright $sunshine 900 18px, 
+contentNav #666 $bright $horizon 700 16px, 
+footerNav white $bright $sunshine normal 16px;
 
 
 @each $var in $navVars {

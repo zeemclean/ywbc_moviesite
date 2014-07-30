@@ -3,49 +3,46 @@
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 content_box">
 				<div class="row">
-					<div class="col-xs-12 video">
+					<div class="col-xs-12 video ">
 						<video width="100%" height="100%" controls>
   							<source src="assets/video/DoubleBarrelbySwitchboardMedia.mp4" type="video/mp4"></source>
 						</video>
 					</div>
 				</div>
 				<div class="row gallerytickets">
-					<div class="col-xs-9">
+					<div class="gallery">
 						<?php
 						require('gallery.php')
 						?>
 					</div>
-					<div class="col-xs-2 tickets">
-						<a class="btn btn-block" href="">
-							<h1 class="buttontext">Book<br><span class="textsmall">Tickets</span><br>Now</h1>
+					<div class="ticket_box">
+						<a class="btn btn-block tickets" href="">
+							<h1 class="buttontext">Book<br><span class="text--small">Tickets</span><br><span class="text--spread" >Now</span></h1>
 						</a>
 					</div>
-				
+				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<h1>Double Barrel</h1>
+						<h1 id="home_heading">Double Barrel</h1>
 					</div>	
-					
-				
-
-
 				</div>
 				<div class="row docabout">
-					<div class="col-md-8 ">
-						<p>Double Barrel is a documentary film which follows Peruvian surf guide,
+					<div class="col-md-8" >
+						<p id="synopsis">Double Barrel is a documentary film which follows Peruvian surf guide,
 						 Harold Koechlin's dream of protecting Peru's world-class
 						surf breaks and working with the local community to turn 
 						a crumbling oil-dominated town into Peru's first truly sustainable surf town.
 						</p>
 					</div>
-					<div class="col-md-4 credits">
-						<p>Directed by Angie Takanami. Produced by Gary Parker, Chris Ashton and Angie Takanami.</p>
+					<div class="col-md-4 ">
+						<p id="credits">Directed by Angie Takanami. Produced by Gary Parker, Chris Ashton <br> and Angie Takanami.
+						<br>A Switchboard Media production.</p>
 					</div>
 				</div>
 				
 				<div class="row">
 					<div class="col-md-12 releasedate">
-						<h3>In Theaters November, 2014</h3>
+						<h3>In Theaters November, 2015</h3>
 					</div>	
 				</div>
 				

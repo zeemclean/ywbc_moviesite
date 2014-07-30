@@ -38,7 +38,13 @@ echo "<html>";
  
 require_once('includes/head.php');
  
-echo "<body>";
+$class = "";
+
+if(isset($_GET['page'])) {
+	$class = $_GET['page'];
+}
+
+echo "<body class='{$class}'>";
  
 require_once('includes/header.php');    
  

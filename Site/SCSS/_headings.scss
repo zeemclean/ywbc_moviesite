@@ -4,53 +4,82 @@ $stint : 'Stint Ultra Condensed', cursive;
 
 h1 {
 	font-size: 48px;
-	font-family: $roboto;
-	font-weight: 300;
-	color: $jetty;
+	font-family: $raleway;
+	font-weight: 900;
+	color: #666;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	margin-bottom: 0px;
 	margin-top:0px;
+	padding-top: 16px;
+	line-height: 48px;
+	padding-bottom: 0px;
+
 
 }
 h1.buttontext {
 	color: white;
-	font-size: 24px;
+	font-size:28px;
 	font-weight: 700;
 	text-align: center;
+	margin: 0;
+	padding: 0;
+	line-height:18px
+
 
 }
 
+.text--small {
+	font-size: 16px;
+	line-height:16px;
+}
+.text--spread{
+	letter-spacing: 10px;
+}
+
 h2 {
-	font-size: 40px;
-	font-family: $robocon;
-	color: $horizon;
+	font-size: 36px;
+	font-family: $raleway;
+	color: $jetty;
 	margin-top: 0;
 	margin-bottom: 0;
-	font-weight: 700;
+	font-weight: 300;
+	text-transform:none;
+	letter-spacing: -2px;
+
+
 }
 h3 {
 	font-size: 24px;
 	font-family: $roboto;
 	font-weight: 300;
-	color: $swell;
+	color: $horizon;
 	margin-top: 0;
 	margin-bottom: 0;
 	text-transform: uppercase;
 	letter-spacing:6px;
 }
 h4 {
+	font-size:17px;
 	font-family: $roboto;
 	font-weight: 700;
 	margin-top: 5px;
 	margin-bottom: 0;
 	font-style: italic;
-	color: #666;	
+	color: $jetty;
+
 }
+ .textlink{
+ 	 color: $horizon;
+
+ 	 &:hover {
+ 	 	color: $sunshine;
+ 	 }
+ }
+
+
  
-.textsmall {
-	font-size: 16px;
-}
+
 
 
 
