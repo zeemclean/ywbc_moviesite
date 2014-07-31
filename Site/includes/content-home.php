@@ -17,13 +17,13 @@
 					</div>
 					<div class="ticket_box">
 						<a class="btn btn-block tickets" href="">
-							<h1 class="buttontext">Book<br><span class="text--small">Tickets</span><br><span class="text--spread" >Now</span></h1>
+							<h1 class="buttontext">Book<br><span class="text--small">Tickets</span><br><span class="widespace">Now</span></h1>
 						</a>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<h1 id="home_heading">Double Barrel</h1>
+						<h1>Double Barrel</h1>
 					</div>	
 				</div>
 				<div class="row docabout">
@@ -35,8 +35,8 @@
 						</p>
 					</div>
 					<div class="col-md-4 ">
-						<p id="credits">Directed by Angie Takanami. Produced by Gary Parker, Chris Ashton <br> and Angie Takanami.
-						<br>A Switchboard Media production.</p>
+						<p id="credits">Directed by Angie Takanami. Produced by Gary Parker,<br> Chris Ashton <br> and Angie Takanami.
+						<br><a href="http://www.productionswitchboard.com/home.asp">A Switchboard Media production.</a></p>
 					</div>
 				</div>
 				

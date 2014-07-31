@@ -146,7 +146,7 @@ h1 {
   color: #666;
   text-transform: uppercase;
   letter-spacing: 5px;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
   margin-top: 0px;
   padding-top: 16px;
   line-height: 48px;
@@ -154,67 +154,79 @@ h1 {
 }
 
 /* line 20, ../SCSS/_headings.scss */
-h1.buttontext {
+.header--row {
+  height: 48px;
+}
+
+/* line 24, ../SCSS/_headings.scss */
+.buttontext {
   color: white;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 700;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  line-height: 18px;
+  text-align: justify;
+  margin-left: 0px;
+  padding: 0px;
+  line-height: 24px;
+  position: absolute;
+  letter-spacing: 7px;
+  padding-top: 6px;
 }
 
-/* line 32, ../SCSS/_headings.scss */
+/* line 39, ../SCSS/_headings.scss */
 .text--small {
-  font-size: 16px;
-  line-height: 16px;
+  font-size: 28px;
+  line-height: 25px;
+  padding: 0px;
+  letter-spacing: 3px;
 }
 
-/* line 36, ../SCSS/_headings.scss */
-.text--spread {
+/* line 46, ../SCSS/_headings.scss */
+.widespace {
+  font-size: 45px;
   letter-spacing: 10px;
+  line-height: 37px;
 }
 
-/* line 40, ../SCSS/_headings.scss */
+/* line 55, ../SCSS/_headings.scss */
 h2 {
   font-size: 36px;
   font-family: "Raleway", sans-serif;
   color: #4d3815;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 12;
   font-weight: 300;
   text-transform: none;
   letter-spacing: -2px;
 }
 
-/* line 52, ../SCSS/_headings.scss */
+/* line 67, ../SCSS/_headings.scss */
 h3 {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: #3b6375;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: 6px;
 }
 
-/* line 62, ../SCSS/_headings.scss */
+/* line 77, ../SCSS/_headings.scss */
 h4 {
-  font-size: 17px;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  margin-top: 5px;
-  margin-bottom: 0;
+  margin-top: 0px;
+  margin-bottom: 6px;
   font-style: italic;
   color: #4d3815;
 }
 
-/* line 72, ../SCSS/_headings.scss */
+/* line 87, ../SCSS/_headings.scss */
 .textlink {
   color: #3b6375;
 }
-/* line 75, ../SCSS/_headings.scss */
+/* line 90, ../SCSS/_headings.scss */
 .textlink:hover {
   color: #ffb34e;
 }
@@ -246,31 +258,80 @@ nav.headerNav {
   overflow: hidden;
 }
 
-/* line 12, ../SCSS/_gallery.scss */
+/* line 9, ../SCSS/_gallery.scss */
+.gallery_wrap--town {
+  width: 750px;
+  margin: 0;
+}
+
+/* line 17, ../SCSS/_gallery.scss */
 .gallery_storage {
   position: relative;
   left: 0;
   top: 0;
-  width: 1150px;
+  width: 2000px;
 }
 
-/* line 26, ../SCSS/_gallery.scss */
-.leadimage {
-  -webkit-animation: bannermove 27000ms linear infinite;
+/* line 24, ../SCSS/_gallery.scss */
+.gallery_list {
+  padding: 0;
 }
 
+/* line 29, ../SCSS/_gallery.scss */
+.gallery_item {
+  width: 140px;
+  height: 100px;
+  background-color: #805a6a;
+  float: left;
+  list-style: none;
+  margin-right: 10px;
+}
+
+/* line 39, ../SCSS/_gallery.scss */
+.townitem {
+  margin-right: 12px;
+}
+
+/* line 43, ../SCSS/_gallery.scss */
+.galler_link {
+  height: inherit;
+  width: inherit;
+}
+
+/* line 49, ../SCSS/_gallery.scss */
+.gallery_controls {
+  position: absolute;
+  width: inherit;
+  margin-top: 35px;
+  z-index: 5;
+}
+
+/* line 56, ../SCSS/_gallery.scss */
+.gallery_control--prev {
+  float: left;
+}
+
+/* line 59, ../SCSS/_gallery.scss */
+.gallery_control--next {
+  float: right;
+}
+
+/*.leadimage {
+    -webkit-animation: bannermove 27000ms linear infinite;
+
+}
+ 
+
+ 
 @-webkit-keyframes "bannermove" {
-  /* line 34, ../SCSS/_gallery.scss */
-  0% {
-    margin-left: 0px;
-  }
-
-  /* line 37, ../SCSS/_gallery.scss */
-  100% {
-    margin-left: -1079px;
-  }
-}
-
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -1079px;
+ }
+ 
+}*/
 /* line 10, ../SCSS/main.scss */
 * {
   box-sizing: border-box;
@@ -292,7 +353,7 @@ body.home {
 /* line 35, ../SCSS/main.scss */
 body.barrelchasers {
   margin: 0 auto;
-  background: url("../assets/images/crew_bg--short.jpg") no-repeat fixed;
+  background: url("../assets/images/crew_bg--flight.jpg") no-repeat fixed;
   background-position: center top;
 }
 
@@ -360,7 +421,6 @@ so i need to make:
 
 /* line 109, ../SCSS/main.scss */
 .video {
-  /*background: $seastorm;*/
   height: 450px;
   margin-bottom: 15px;
 }
@@ -370,13 +430,24 @@ so i need to make:
   height: 100px;
 }
 
-/* line 123, ../SCSS/main.scss */
+/* line 121, ../SCSS/main.scss */
+.gallery {
+  margin-bottom: 16px;
+}
+
+/* line 124, ../SCSS/main.scss */
+.gallery_image--big {
+  position: absolute;
+  width: inherit;
+}
+
+/* line 131, ../SCSS/main.scss */
 .ticket_box {
   margin-right: 15px;
   width: inherit;
 }
 
-/* line 130, ../SCSS/main.scss */
+/* line 138, ../SCSS/main.scss */
 .tickets {
   margin-left: 15px;
   height: 100%;
@@ -387,42 +458,50 @@ so i need to make:
   height: 100px;
   width: 143px;
   float: right;
-}
-
-/* line 143, ../SCSS/main.scss */
-.releasedate {
-  padding-top: 16px;
-  text-align: center;
-  color: #4d8c65;
-  padding-bottom: 16px;
+  padding: 3px;
 }
 
 /* line 152, ../SCSS/main.scss */
+.releasedate {
+  padding-top: 16px;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+/* line 162, ../SCSS/main.scss */
 nav.contentNav {
   position: relative;
   left: -20px;
 }
 
-/* line 157, ../SCSS/main.scss */
+/* line 167, ../SCSS/main.scss */
 footer {
   padding-bottom: 16px;
 }
 
-/* line 162, ../SCSS/main.scss */
+/* line 172, ../SCSS/main.scss */
 p {
   font-size: 16px;
-  font-family: "Helvetica neue", sans-serif;
-  line-height: 24px;
+  font-family: "Raleway", sans-serif;
+  line-height: 28px;
   padding-bottom: 16px;
+  color: #666;
 }
 
-/* line 169, ../SCSS/main.scss */
+/* line 180, ../SCSS/main.scss */
+label {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #666;
+}
+
+/* line 186, ../SCSS/main.scss */
 #synopsis {
   padding-top: 0px;
   margin-top: 0px;
 }
 
-/* line 173, ../SCSS/main.scss */
+/* line 190, ../SCSS/main.scss */
 #credits {
   padding-top: 0px;
   margin-top: 0px;
@@ -430,45 +509,40 @@ p {
   color: #4d3815;
 }
 
-/* line 180, ../SCSS/main.scss */
-.docabout {
-  margin-top: 15px;
-}
-
-/* line 184, ../SCSS/main.scss */
+/* line 199, ../SCSS/main.scss */
 video::-webkit-media-controls-panel {
   background-color: rgba(59, 99, 117, 0.9);
 }
 
-/* line 188, ../SCSS/main.scss */
+/* line 203, ../SCSS/main.scss */
 video::-webkit-media-controls-time-remaining-display {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
-/* line 193, ../SCSS/main.scss */
+/* line 208, ../SCSS/main.scss */
 audio::-webkit-media-controls-play-button, video::-webkit-media-controls-play-button {
   background-image: url("../assets/images/playicon--white.png");
   background-size: 100%;
   -webkit-appearance: none;
 }
 
-/* line 199, ../SCSS/main.scss */
+/* line 214, ../SCSS/main.scss */
 .biopic {
   width: 100%;
 }
 
-/* line 204, ../SCSS/main.scss */
+/* line 219, ../SCSS/main.scss */
 a.bio_links {
   margin-left: 16px;
 }
 
-/* line 208, ../SCSS/main.scss */
+/* line 223, ../SCSS/main.scss */
 .lobitos_gallery {
   width: 100%;
 }
 
-/* line 212, ../SCSS/main.scss */
+/* line 227, ../SCSS/main.scss */
 .gallery {
   float: left;
   margin-left: 15px;

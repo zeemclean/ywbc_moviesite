@@ -107,7 +107,7 @@ article {
 }
 
 .video {
-    /*background: $seastorm;*/
+   // background: $seastorm;
     height:450px;
     margin-bottom: 15px;
 
@@ -117,6 +117,14 @@ article {
 .gallerytickets {
 
     height: 100px;
+}
+.gallery{
+    margin-bottom: 16px;
+}
+.gallery_image--big{
+    position: absolute;
+    width: inherit;
+
 }
 
 
@@ -137,15 +145,17 @@ article {
     height: 100px;
     width: 143px;
     float: right;
+    padding: 3px;
 }
 
 
 .releasedate {
     padding-top: 16px;
     text-align:center;
-    color: $swell;
-    padding-bottom:16px; 
+    padding-bottom:16px;
+
 }
+
 
 
 
@@ -161,9 +171,16 @@ footer {
 
 p {
     font-size: 16px;
-    font-family: $paragraph;
-    line-height: 24px; 
+    font-family: $raleway;
+    line-height: 28px; 
     padding-bottom:16px;
+    color: #666;
+}
+
+label {
+    font-family: $raleway;
+    font-weight: 400;
+    color: #666;
 }
 
 #synopsis {
@@ -177,9 +194,7 @@ p {
     color: $jetty;
 }
 
-.docabout {
-    margin-top: 15px;
-}
+
 
 video::-webkit-media-controls-panel{
     background-color: rgba($horizon, 0.9)

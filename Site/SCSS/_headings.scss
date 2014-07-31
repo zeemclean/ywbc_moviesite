@@ -9,7 +9,7 @@ h1 {
 	color: #666;
 	text-transform: uppercase;
 	letter-spacing: 5px;
-	margin-bottom: 0px;
+	margin-bottom: 16px;
 	margin-top:0px;
 	padding-top: 16px;
 	line-height: 48px;
@@ -17,32 +17,47 @@ h1 {
 
 
 }
-h1.buttontext {
+.header--row{
+	height: 48px;
+}
+
+.buttontext {
 	color: white;
-	font-size:28px;
+	font-size:40px;
 	font-weight: 700;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	line-height:18px
+	text-align: justify;
+	margin-left: 0px;
+	padding: 0px;
+	line-height:24px;
+	position: absolute;
+	letter-spacing:7px;
+	padding-top:6px;
 
 
 }
 
 .text--small {
-	font-size: 16px;
-	line-height:16px;
+	font-size: 28px;
+	line-height:25px;
+	padding: 0px;
+	letter-spacing: 3px;
 }
-.text--spread{
-	letter-spacing: 10px;
+
+.widespace {
+	font-size: 45px;
+	letter-spacing:10px;
+	line-height: 37px;
+
 }
+
+
 
 h2 {
 	font-size: 36px;
 	font-family: $raleway;
 	color: $jetty;
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 12;
 	font-weight: 300;
 	text-transform:none;
 	letter-spacing: -2px;
@@ -55,16 +70,16 @@ h3 {
 	font-weight: 300;
 	color: $horizon;
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 8px;
 	text-transform: uppercase;
 	letter-spacing:6px;
 }
 h4 {
-	font-size:17px;
+	font-size:18px;
 	font-family: $roboto;
 	font-weight: 700;
-	margin-top: 5px;
-	margin-bottom: 0;
+	margin-top: 0px;
+	margin-bottom: 6px;
 	font-style: italic;
 	color: $jetty;
 
