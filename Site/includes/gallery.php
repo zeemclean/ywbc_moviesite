@@ -15,16 +15,16 @@
 			
 			
 			<ul class="gallery_list">
-				<li class="gallery_item mainitem"><a href="" class="gallery_link"><img class="gallery_item" src="assets/images/gallery/main_1.jpg" alt=""></img></a></li>
-				<li class="gallery_item mainitem"><a href="" class="gallery_link"><img class="gallery_item" src="assets/images/gallery/main_2.jpg" alt=""></img></a></li>
-				<li class="gallery_item mainitem"><a href="" class="gallery_link"><img class="gallery_item" src="assets/images/gallery/main_3.jpg" alt=""></img></a></li>
-				<li class="gallery_item mainitem"><a href="" class="gallery_link"><img class="gallery_item" src="assets/images/gallery/main_4.jpg" alt=""></img></a></li>
-				<li class="gallery_item mainitem"><a href="" class="gallery_link"><img class="gallery_item" src="assets/images/gallery/main_5.jpg" alt=""></img></a></li>
-				<li class="gallery_item mainitem"><a href="" class="gallery_link"><img class="gallery_item" src="assets/images/gallery/main_6.jpg" alt=""></img></a></li>
-				<li class="gallery_item mainitem"><a href="" class="gallery_link"><img class="gallery_item" src="assets/images/gallery/main_7.jpg" alt=""></img></a></li>
-				<li class="gallery_item mainitem"><a href="" class="gallery_link"><img class="gallery_item" src="assets/images/gallery/main_8.jpg" alt=""></img></a></li>
-				<li class="gallery_item mainitem"><a href="" class="gallery_link"><img class="gallery_item" src="assets/images/gallery/main_9.jpg" alt=""></img></a></li>
-				<li class="gallery_item mainitem"><a href="" class="gallery_link"><img class="gallery_item" src="assets/images/gallery/main_10.jpg" alt=""></img></a></li>
+				<li class="gallery_item mainitem"><a href="#" class="imagechange"><img class="gallery_item" src="assets/images/gallery/main_1.jpg" alt=""></img></a></li>
+				<li class="gallery_item mainitem"><a href="#" class="imagechange"><img class="gallery_item" src="assets/images/gallery/main_2.jpg" alt=""></img></a></li>
+				<li class="gallery_item mainitem"><a href="#" class="imagechange"><img class="gallery_item" src="assets/images/gallery/main_3.jpg" alt=""></img></a></li>
+				<li class="gallery_item mainitem"><a href="#" class="imagechange"><img class="gallery_item" src="assets/images/gallery/main_4.jpg" alt=""></img></a></li>
+				<li class="gallery_item mainitem"><a href="#" class="imagechange"><img class="gallery_item" src="assets/images/gallery/main_5.jpg" alt=""></img></a></li>
+				<li class="gallery_item mainitem"><a href="#" class="imagechange"><img class="gallery_item" src="assets/images/gallery/main_6.jpg" alt=""></img></a></li>
+				<li class="gallery_item mainitem"><a href="#" class="imagechange"><img class="gallery_item" src="assets/images/gallery/main_7.jpg" alt=""></img></a></li>
+				<li class="gallery_item mainitem"><a href="#" class="imagechange"><img class="gallery_item" src="assets/images/gallery/main_8.jpg" alt=""></img></a></li>
+				<li class="gallery_item mainitem"><a href="#" class="imagechange"><img class="gallery_item" src="assets/images/gallery/main_9.jpg" alt=""></img></a></li>
+				<li class="gallery_item mainitem"><a href="#" class="imagechange"><img class="gallery_item" src="assets/images/gallery/main_10.jpg" alt=""></img></a></li>
 			</ul>
 			<!--place holder gallery
 

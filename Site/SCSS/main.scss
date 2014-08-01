@@ -49,6 +49,11 @@ body.signup {
     background: $bgnews;
     background-position: center top;
 }
+body.thankyou {
+    margin: 0 auto;
+    background: $bgnews;
+    background-position: center top;
+}
 
 /*Variable backgrounds
 
@@ -227,6 +232,10 @@ a.bio_links{
 .gallery {
     float:left;
     margin-left:15px;
+}
+
+.submitbtn {
+    margin-top:32px;
 }
 
 

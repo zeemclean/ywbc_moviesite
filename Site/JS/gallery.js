@@ -8,32 +8,58 @@ $(document).ready(function() {
 
 	var thumb = $('.imagechange');
 	
-	var thumbsT = $('img .townitem');
+	var thumbsT = ['.townitem_1', '.townitem_2', '.townitem_3', '.townitem_4', '.townitem_5', ]
 	
 	var feature = $('img .gallery_image--big');
 	
 	var mainImgs = ['main_1', 'main_2', 'main_3', 'main_4', 'main_5', 'main_6', 'main_7', 'main_8', 'main_9', 'main_10'];
-	
 
-	var townImgs = ['assets/images/towngallery/town_1.jpg',
-					'assets/images/towngallery/town_2.jpg',
-					'assets/images/towngallery/town_3.jpg',
-					'assets/images/towngallery/town_4.jpg',
-					'assets/images/towngallery/town_5.jpg'];
-	
+	// var townImgs = ['assets/images/towngallery/town_1.jpg',
+	// 				'assets/images/towngallery/town_2.jpg',
+	// 				'assets/images/towngallery/town_3.jpg',
+	// 				'assets/images/towngallery/town_4.jpg',
+	// 				'assets/images/towngallery/town_5.jpg']
+
+// 
+	var prev = $('a .gallery_control--prev');
+
+	var next = $('a .gallery_control--next');
+
+	var totalGalleryWidth = 0;
+
+	// Total width is calculated by looping through each gallery item and
+    // adding up each width and storing that in `totalWidth`
+    $(".mainitem ").each(function(){
+        totalGalleryWidth = totalGalleryWidth + $(this).outerWidth(true);
+    });
+
+    // The maxScrollPosition is the furthest point the items should
+    // ever scroll to. We always want the viewport to be full of images.
+    var maxScrollPosition = totalGalleryWidth - $(".gallery-wrap").outerWidth();
 
 
 
-	thumb.on('click', function(){
+
+
+    //Town Gallery Function (no animation)
+
+	thumbT.on('click', function(){
 		event.preventDefault();
-		thumb.each(function(index){
-			feature.attr('src', townImgs[index] );
+		changeTFeatureImg();
+
+
+
+		function changeTFeatureImg(){
+		
+			feature.removeClass(thumbT);
+			feature.addClass(thumbT);
 		
 	
 			});
 
+		});
+	});
 
-	});	
 
 
 });

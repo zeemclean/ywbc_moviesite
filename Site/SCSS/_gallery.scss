@@ -51,14 +51,40 @@
     width: inherit;
     margin-top: 35px;
     z-index:5;
+    display: cursor;
 
 }
 .gallery_control--prev {
     float: left;
+    display:block;
 }
 .gallery_control--next {
     float: right;
+    display:block;
 }
+
+
+@mixin townGalleryImgs($tBgUrl) {
+    background: $tBgUrl;
+    background-size: cover;
+}
+
+
+$tBgImgVars : townitem_1 url(../assets/images/towngallery/town_1.jpg), 
+              townitem_2 url(../assets/images/towngallery/town_2.jpg),
+              townitem_3 url(../assets/images/towngallery/town_3.jpg),
+              townitem_4 url(../assets/images/towngallery/town_4.jpg),
+              townitem_5 url(../assets/images/towngallery/town_5.jpg);
+
+        @each $tImgs in $tBgImgVars {
+            $bgclassT: nth($tImgs, 1);
+            $tBgUrl: nth($tImgs, 2);
+
+        .#{$bgclassT} {
+    @include townGalleryImgs($tBgUrl);
+    }
+}
+
 
 
 

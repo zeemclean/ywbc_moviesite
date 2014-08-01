@@ -169,13 +169,13 @@ h1 {
   line-height: 24px;
   position: absolute;
   letter-spacing: 7px;
-  padding-top: 6px;
+  padding-top: 5px;
 }
 
 /* line 39, ../SCSS/_headings.scss */
 .text--small {
   font-size: 28px;
-  line-height: 25px;
+  line-height: 24px;
   padding: 0px;
   letter-spacing: 3px;
 }
@@ -184,7 +184,8 @@ h1 {
 .widespace {
   font-size: 45px;
   letter-spacing: 10px;
-  line-height: 37px;
+  line-height: 36px;
+  font-weight: 900;
 }
 
 /* line 55, ../SCSS/_headings.scss */
@@ -304,16 +305,49 @@ nav.headerNav {
   width: inherit;
   margin-top: 35px;
   z-index: 5;
+  display: cursor;
 }
 
-/* line 56, ../SCSS/_gallery.scss */
+/* line 57, ../SCSS/_gallery.scss */
 .gallery_control--prev {
   float: left;
+  display: block;
 }
 
-/* line 59, ../SCSS/_gallery.scss */
+/* line 61, ../SCSS/_gallery.scss */
 .gallery_control--next {
   float: right;
+  display: block;
+}
+
+/* line 83, ../SCSS/_gallery.scss */
+.townitem_1 {
+  background: url(../assets/images/towngallery/town_1.jpg);
+  background-size: cover;
+}
+
+/* line 83, ../SCSS/_gallery.scss */
+.townitem_2 {
+  background: url(../assets/images/towngallery/town_2.jpg);
+  background-size: cover;
+}
+
+/* line 83, ../SCSS/_gallery.scss */
+.townitem_3 {
+  background: url(../assets/images/towngallery/town_3.jpg);
+  background-size: cover;
+}
+
+/* line 83, ../SCSS/_gallery.scss */
+.townitem_4 {
+  background: url(../assets/images/towngallery/town_4.jpg);
+  background-size: cover;
+}
+
+/* line 83, ../SCSS/_gallery.scss */
+.townitem_5 {
+  background: url(../assets/images/towngallery/town_5.jpg);
+  background-size: cover;
 }
 
 /*.leadimage {
@@ -371,6 +405,13 @@ body.signup {
   background-position: center top;
 }
 
+/* line 52, ../SCSS/main.scss */
+body.thankyou {
+  margin: 0 auto;
+  background: url("../assets/images/news_bg.jpg") no-repeat fixed;
+  background-position: center top;
+}
+
 /*Variable backgrounds
 
 I want to make each page have a different background.
@@ -380,7 +421,7 @@ so i need to make:
  and an if or case statement whih assigns them correctly.
  See nav assignation and if/case practice files.
 */
-/* line 65, ../SCSS/main.scss */
+/* line 70, ../SCSS/main.scss */
 .clearfix:after, article:after {
   content: ".";
   display: block;
@@ -391,22 +432,22 @@ so i need to make:
   font-size: 0;
 }
 
-/* line 75, ../SCSS/main.scss */
+/* line 80, ../SCSS/main.scss */
 .clearfix, article {
   display: inline-block;
 }
 
-/* line 81, ../SCSS/main.scss */
+/* line 86, ../SCSS/main.scss */
 * html .clearfix, * html article {
   height: 1%;
 }
 
-/* line 85, ../SCSS/main.scss */
+/* line 90, ../SCSS/main.scss */
 .clearfix, article {
   display: block;
 }
 
-/* line 94, ../SCSS/main.scss */
+/* line 99, ../SCSS/main.scss */
 .content_box {
   background: white;
   margin-top: 16px;
@@ -414,40 +455,40 @@ so i need to make:
   padding-bottom: 16px;
 }
 
-/* line 105, ../SCSS/main.scss */
+/* line 110, ../SCSS/main.scss */
 .inivisible {
   visibility: none;
 }
 
-/* line 109, ../SCSS/main.scss */
+/* line 114, ../SCSS/main.scss */
 .video {
   height: 450px;
   margin-bottom: 15px;
 }
 
-/* line 117, ../SCSS/main.scss */
+/* line 122, ../SCSS/main.scss */
 .gallerytickets {
   height: 100px;
 }
 
-/* line 121, ../SCSS/main.scss */
+/* line 126, ../SCSS/main.scss */
 .gallery {
   margin-bottom: 16px;
 }
 
-/* line 124, ../SCSS/main.scss */
+/* line 129, ../SCSS/main.scss */
 .gallery_image--big {
   position: absolute;
   width: inherit;
 }
 
-/* line 131, ../SCSS/main.scss */
+/* line 136, ../SCSS/main.scss */
 .ticket_box {
   margin-right: 15px;
   width: inherit;
 }
 
-/* line 138, ../SCSS/main.scss */
+/* line 143, ../SCSS/main.scss */
 .tickets {
   margin-left: 15px;
   height: 100%;
@@ -461,25 +502,25 @@ so i need to make:
   padding: 3px;
 }
 
-/* line 152, ../SCSS/main.scss */
+/* line 157, ../SCSS/main.scss */
 .releasedate {
   padding-top: 16px;
   text-align: center;
   padding-bottom: 16px;
 }
 
-/* line 162, ../SCSS/main.scss */
+/* line 167, ../SCSS/main.scss */
 nav.contentNav {
   position: relative;
   left: -20px;
 }
 
-/* line 167, ../SCSS/main.scss */
+/* line 172, ../SCSS/main.scss */
 footer {
   padding-bottom: 16px;
 }
 
-/* line 172, ../SCSS/main.scss */
+/* line 177, ../SCSS/main.scss */
 p {
   font-size: 16px;
   font-family: "Raleway", sans-serif;
@@ -488,20 +529,20 @@ p {
   color: #666;
 }
 
-/* line 180, ../SCSS/main.scss */
+/* line 185, ../SCSS/main.scss */
 label {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   color: #666;
 }
 
-/* line 186, ../SCSS/main.scss */
+/* line 191, ../SCSS/main.scss */
 #synopsis {
   padding-top: 0px;
   margin-top: 0px;
 }
 
-/* line 190, ../SCSS/main.scss */
+/* line 195, ../SCSS/main.scss */
 #credits {
   padding-top: 0px;
   margin-top: 0px;
@@ -509,41 +550,46 @@ label {
   color: #4d3815;
 }
 
-/* line 199, ../SCSS/main.scss */
+/* line 204, ../SCSS/main.scss */
 video::-webkit-media-controls-panel {
   background-color: rgba(59, 99, 117, 0.9);
 }
 
-/* line 203, ../SCSS/main.scss */
+/* line 208, ../SCSS/main.scss */
 video::-webkit-media-controls-time-remaining-display {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
-/* line 208, ../SCSS/main.scss */
+/* line 213, ../SCSS/main.scss */
 audio::-webkit-media-controls-play-button, video::-webkit-media-controls-play-button {
   background-image: url("../assets/images/playicon--white.png");
   background-size: 100%;
   -webkit-appearance: none;
 }
 
-/* line 214, ../SCSS/main.scss */
+/* line 219, ../SCSS/main.scss */
 .biopic {
   width: 100%;
 }
 
-/* line 219, ../SCSS/main.scss */
+/* line 224, ../SCSS/main.scss */
 a.bio_links {
   margin-left: 16px;
 }
 
-/* line 223, ../SCSS/main.scss */
+/* line 228, ../SCSS/main.scss */
 .lobitos_gallery {
   width: 100%;
 }
 
-/* line 227, ../SCSS/main.scss */
+/* line 232, ../SCSS/main.scss */
 .gallery {
   float: left;
   margin-left: 15px;
+}
+
+/* line 237, ../SCSS/main.scss */
+.submitbtn {
+  margin-top: 32px;
 }

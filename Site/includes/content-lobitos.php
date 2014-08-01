@@ -13,7 +13,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="video">
-						<img class="gallery_image--big" src="assets/images/towngallery/town_1.jpg" alt="">
+						<div class="gallery_image--big" alt=""></div>
 
 							
 						</div>
